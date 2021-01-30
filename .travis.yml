@@ -1,0 +1,13 @@
+language: python
+
+python:
+   - '3.7'
+env:
+   - SECRET_KEY='TEST'
+servicies:
+   - postgresql
+install:
+   - pip install -r requirments.txt
+
+script:
+   - python manage.py test
